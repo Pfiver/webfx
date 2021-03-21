@@ -9,4 +9,6 @@
         </body>
     </html>
 
+    <inherits name="com.google.gwt.resources.Resources" />
+
 </module>

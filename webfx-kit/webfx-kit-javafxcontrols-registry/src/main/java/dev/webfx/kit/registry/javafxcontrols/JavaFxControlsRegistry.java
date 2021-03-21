@@ -32,4 +32,5 @@ public class JavaFxControlsRegistry {
 
     public static native void registerScrollPane();
 
+    public static native void registerChart();
 }

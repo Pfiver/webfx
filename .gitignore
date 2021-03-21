@@ -54,6 +54,11 @@ $RECYCLE.BIN/
 
 
 
+# MacOS
+.DS_Store
+
+
+
 ### Vertx
 .vertx
 

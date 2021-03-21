@@ -8,6 +8,8 @@ import javafx.geometry.Bounds;
 import dev.webfx.kit.mapper.peers.javafxgraphics.gwt.html.HtmlNodePeer;
 import dev.webfx.kit.mapper.peers.javafxgraphics.emul_coupling.LayoutMeasurable;
 
+import java.util.logging.Logger;
+
 /**
  * @author Bruno Salmon
  */
@@ -91,6 +93,9 @@ public interface HtmlLayoutMeasurable extends LayoutMeasurable {
         style.height = styleHeight;
         if (cache != null)
             cache.setCachedSize(value, width, result);
+
+        Logger.getLogger(HtmlLayoutMeasurable.class.getName()).info("sizeAndMeasure() " + getClass() + " < " + value + " > " + result);
+
         return result;
     }
 

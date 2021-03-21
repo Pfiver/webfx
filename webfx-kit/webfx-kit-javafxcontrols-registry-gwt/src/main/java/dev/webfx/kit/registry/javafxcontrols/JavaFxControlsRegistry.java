@@ -1,6 +1,7 @@
 package dev.webfx.kit.registry.javafxcontrols;
 
 import com.sun.javafx.scene.control.LabeledText;
+import javafx.scene.chart.*;
 import javafx.scene.control.skin.ToolkitTextBox;
 import javafx.scene.control.*;
 import dev.webfx.kit.mapper.peers.javafxgraphics.gwt.html.HtmlTextPeer;
@@ -70,4 +71,10 @@ public class JavaFxControlsRegistry {
         registerNodePeerFactory(ScrollPane.class, HtmlScrollPanePeer::new);
     }
 
+    public static void registerChart() {
+        registerNodePeerFactory(AreaChart.class, HtmlChartPeer::new);
+        registerNodePeerFactory(StackedBarChart.class, HtmlChartPeer::new);
+        registerNodePeerFactory(XYChart.class, HtmlChartPeer::new);
+        registerNodePeerFactory(LineChart.class, HtmlChartPeer::new);
+    }
 }
