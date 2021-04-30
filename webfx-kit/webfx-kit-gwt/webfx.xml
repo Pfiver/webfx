@@ -1,17 +1,19 @@
-<module>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
 
-    <dependencies>
-
-        <source-modules>
-            <module>javafx-base</module>
-        </source-modules>
-
-    </dependencies>
+    <packages>
+        <source-packages/>
+    </packages>
 
     <providers>
-        <provider spi="dev.webfx.kit.launcher.spi.WebFxKitLauncherProvider">dev.webfx.kit.launcher.spi.gwt.GwtWebFxKitLauncherProvider</provider>
-        <provider spi="dev.webfx.kit.mapper.spi.WebFxKitMapperProvider">dev.webfx.kit.mapper.spi.gwt.GwtWebFxKitHtmlMapperProvider</provider>
+        <dev.webfx.kit.launcher.spi.WebFxKitLauncherProvider>dev.webfx.kit.launcher.spi.gwt.GwtWebFxKitLauncherProvider</dev.webfx.kit.launcher.spi.WebFxKitLauncherProvider>
+        <dev.webfx.kit.mapper.spi.WebFxKitMapperProvider>dev.webfx.kit.mapper.spi.gwt.GwtWebFxKitHtmlMapperProvider</dev.webfx.kit.mapper.spi.WebFxKitMapperProvider>
     </providers>
+
+    <dependencies>
+        <source-modules/>
+        <source-module>javafx-base</source-module>
+    </dependencies>
 
     <html if-module-property-true="show-loading-spinner-on-startup">
         <head>
@@ -119,4 +121,4 @@
         </body>
     </html>
 
-</module>
+</project>

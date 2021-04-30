@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+
+    <libraries>
+
+        <group>
+            <groupId>org.openjfx</groupId>
+            <version>16</version>
+
+            <library name="javafx-base">
+            </library>
+
+            <library name="javafx-graphics">
+                <packages>
+                    <package>javafx.concurrent</package>
+                </packages>
+            </library>
+
+            <library name="javafx-controls">
+                <packages>
+                    <package>javafx.scene.chart</package>
+                </packages>
+            </library>
+
+            <library name="javafx-media">
+            </library>
+
+            <library name="javafx-web">
+                <packages>
+                    <package>javafx.scene.web</package>
+                </packages>
+            </library>
+
+            <library name="javafx-swing">
+                <packages>
+                    <package>javafx.embed.swing</package>
+                </packages>
+            </library>
+
+        </group>
+    </libraries>
+
+</project>
+

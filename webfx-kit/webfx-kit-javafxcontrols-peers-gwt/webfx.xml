@@ -1,4 +1,13 @@
-<module>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+
+    <packages>
+        <source-packages/>
+    </packages>
+
+    <dependencies>
+        <source-modules/>
+    </dependencies>
 
     <html if-uses-java-class="javafx.scene.control.ScrollPane">
         <head>
@@ -10,5 +19,4 @@
     </html>
 
     <inherits name="com.google.gwt.resources.Resources" />
-
-</module>
+</project>

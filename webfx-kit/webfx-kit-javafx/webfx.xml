@@ -1,9 +1,18 @@
-<module executable="true" >
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project executable="false" >
+
+    <packages>
+        <source-packages/>
+    </packages>
 
     <providers>
-        <provider spi="dev.webfx.kit.launcher.spi.WebFxKitLauncherProvider">dev.webfx.kit.launcher.spi.javafx.JavaFxWebFxKitLauncherProvider</provider>
-        <provider spi="dev.webfx.platform.client.services.uischeduler.spi.UiSchedulerProvider">dev.webfx.platform.client.services.uischeduler.spi.impl.javafx.FxUiSchedulerProvider</provider>
+        <dev.webfx.kit.launcher.spi.WebFxKitLauncherProvider>dev.webfx.kit.launcher.spi.javafx.JavaFxWebFxKitLauncherProvider</dev.webfx.kit.launcher.spi.WebFxKitLauncherProvider>
+        <dev.webfx.platform.client.services.uischeduler.spi.UiSchedulerProvider>dev.webfx.platform.client.services.uischeduler.spi.impl.javafx.FxUiSchedulerProvider</dev.webfx.platform.client.services.uischeduler.spi.UiSchedulerProvider>
     </providers>
+
+    <dependencies>
+        <source-modules/>
+    </dependencies>
 
     <graalvm-reflection-json>
         <![CDATA[
@@ -30,4 +39,4 @@
         ]]>
     </graalvm-reflection-json>
 
-</module>
+</project>
